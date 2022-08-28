@@ -1,0 +1,22 @@
+[{"id":"snake_charmer"},{"id":"alchemist"},{"id":"amnesiac"},{"id":"balloonist"},{"id":"cannibal"},{"id":"farmer"},{"id":"general"},{"id":"poppy_grower"},{"id":"pixie"},{"id":"bounty_hunter"},{"id":"preacher"},{"id":"sailor"},{"id":"gambler"},{"id":"drunk"},{"id":"lunatic"},{"id":"moonchild"},{"id":"barber"},{"id":"pit-hag"},{"id":"cerenovus"},{"id":"marionette"},{"id":"mezepheles"},{"id":"al-hadikhia"},{"id":"lil_monsta"},{"id":"lleech"},{"id":"fang_gu"},
+{
+  "id": "_meta",
+  "name": "身份危机",
+  "author": "Little Black",
+  "logo": "https://i.postimg.cc/WzXP7zCF/10001.png"
+},
+{
+    "id": "1",
+    "image": "https://i.postimg.cc/hGTW5pNq/image.png",
+    "edition": "custom",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": ["失去能力"],
+    "remindersGlobal": [],
+    "setup": 0,
+    "name": "天启召唤者",
+    "team": "townsfolk",
+    "ability": "每局游戏限一次，如果此时为白天且只有四名或更少的玩家存活，你可以私下拜访说书人以查看魔法书20秒钟。"
+  }]
