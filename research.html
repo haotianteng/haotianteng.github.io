@@ -16,6 +16,17 @@
     <!-- Custom styles for this template -->
     <link href="jumbotron-narrow.css" rel="stylesheet">
     <link href="mycss.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      // This JavaScript code will open all <a> links in a new tab/window
+      window.onload = function() {
+          var links = document.getElementsByTagName('a');
+          for (var i = 0; i < links.length; i++) {
+              links[i].setAttribute('target', '_blank');
+              links[i].setAttribute('rel', 'noopener noreferrer');
+          }
+      };
+    </script>
   </head>
 
   <body>
@@ -39,7 +50,48 @@
           <!-- ========================================= -->
 
           <hr>
-          <h4>Cell Type Assignments for Spatial Transcriptomics Data</h4>
+          <h4>Detecting m6A RNA modification from nanopore sequencing using a semi-supervised learning framework</h4>
+          <p><strong>Haotian Teng</strong>, Marcus Stoiber,  Ziv Bar-Joseph, Carl Kingsford</p>
+
+	        <a role="button" class="btn btn-default btn-sm"
+            href="https://github.com/haotianteng/Xron">
+            <span class="glyphicon glyphicon-link"></span> Github </a>
+          <!-- Github link --> 
+
+          <!-- paper -->
+          <a role="button" class="btn btn-default btn-sm"
+            href="https://www.biorxiv.org/content/10.1101/2024.01.06.574484v1.full.pdf">
+            <span class="glyphicon glyphicon-file"></span> biorxiv </a>
+
+          <!-- bib button -->
+          <a id="teng2024detecting" style="cursor:pointer;" role="button" class="btn btn-default btn-sm">
+            <span class="glyphicon glyphicon-file"></span> bib
+          </a>
+          <script type="text/javascript">
+            $(document).ready(function(){
+              $("#teng2024detecting").click(function(){
+                $("#teng2024detecting-content").slideToggle(); // Toggle the div with the ID "teng2024detecting"
+              });
+            });
+          </script>
+          <div id="teng2024detecting-content" class="bib">
+            <p>
+            @article{teng2024detecting,
+              title={Detecting m6A RNA modification from nanopore sequencing using a semi-supervised learning framework},
+              author={Teng, Haotian and Stoiber, Marcus and Bar-Joseph, Ziv and Kingsford, Carl},
+              journal={bioRxiv},
+              pages={2024--01},
+              year={2024},
+              publisher={Cold Spring Harbor Laboratory}
+            }
+            </p>
+          </div>          
+
+
+          <!-- ========================================= -->
+
+          <hr>
+          <h4>Clustering spatial transcriptomics data</h4>
           <p><strong>Haotian Teng</strong>, Ye Yuan,  Ziv Bar-Joseph</p>
 
 	  <a role="button" class="btn btn-default btn-sm"
@@ -62,11 +114,11 @@
           <div id="dai-iccv17-content" class="bib">
             <p>
 		@article{teng2021cell,
-		  title={Cell Type Assignments for Spatial Transcriptomics Data},
+		  title={Clustering spatial transcriptomics data},
 		  author={Teng, Haotian and Yuan, Ye and Bar-Joseph, Ziv},
-		  journal={bioRxiv},
-		  year={2021},
-		  publisher={Cold Spring Harbor Laboratory}
+		  journal={Bioinformatics},
+		  year={2022},
+		  publisher={Oxford University Press}
 		}
             </p>
           </div>
@@ -89,13 +141,13 @@
             <span class="glyphicon glyphicon-file"></span> pdf </a>
 
           <!-- bib button -->
-          <a id="dai-iccv17" style="cursor:pointer;" role="button" class="btn btn-default btn-sm">
+          <a id="pitt2020evaluating" style="cursor:pointer;" role="button" class="btn btn-default btn-sm">
             <span class="glyphicon glyphicon-file"></span> bib </a>
           <script type="text/javascript">
-            $(document).ready(function(){$("#dai-iccv17").click(function(){
-              $("#dai-iccv17-content").slideToggle(); }); });
+            $(document).ready(function(){$("#pitt2020evaluating").click(function(){
+              $("#pitt2020evaluating-content").slideToggle(); }); });
           </script>
-          <div id="dai-iccv17-content" class="bib">
+          <div id="pitt2020evaluating-content" class="bib">
             <p>
 		@article{pitt2020evaluating,
 		  title={Evaluating the genome and resistome of extensively drug-resistant Klebsiella pneumoniae using native DNA and RNA Nanopore sequencing},
@@ -131,13 +183,13 @@
             <span class="glyphicon glyphicon-file"></span> pdf </a>
 
           <!-- bib button -->
-          <a id="dai-iccv17" style="cursor:pointer;" role="button" class="btn btn-default btn-sm">
+          <a id="teng2017chiron" style="cursor:pointer;" role="button" class="btn btn-default btn-sm">
             <span class="glyphicon glyphicon-file"></span> bib </a>
           <script type="text/javascript">
-            $(document).ready(function(){$("#dai-iccv17").click(function(){
-              $("#dai-iccv17-content").slideToggle(); }); });
+            $(document).ready(function(){$("#teng2017chiron").click(function(){
+              $("#teng2017chiron-content").slideToggle(); }); });
           </script>
-          <div id="dai-iccv17-content" class="bib">
+          <div id="teng2017chiron-content" class="bib">
             <p>
             @article{teng2017chiron,
 	    title={Chiron: Translating nanopore raw signal directly into nucleotide sequence using deep learning},
@@ -170,13 +222,13 @@
             <span class="glyphicon glyphicon-file"></span> pdf </a>
 
           <!-- bib button -->
-          <a id="petuum-kdd" style="cursor:pointer;" role="button" class="btn btn-default btn-sm">
+          <a id="avitan2017spontaneous" style="cursor:pointer;" role="button" class="btn btn-default btn-sm">
             <span class="glyphicon glyphicon-file"></span> bib </a>
           <script type="text/javascript">
-            $(document).ready(function(){$("#petuum-kdd").click(function(){
-              $("#petuum-kdd-content").slideToggle(); }); });
+            $(document).ready(function(){$("#avitan2017spontaneous").click(function(){
+              $("#avitan2017spontaneous-content").slideToggle(); }); });
           </script>
-          <div id="petuum-kdd-content" class="bib">
+          <div id="avitan2017spontaneous-content" class="bib">
             <p>
             @article{avitan2017spontaneous,
 		  title={Spontaneous Activity in the Zebrafish Tectum Reorganizes over Development and Is Influenced by Visual Experience},
@@ -206,17 +258,17 @@
             <span class="glyphicon glyphicon-file"></span> pdf </a>
 
           <!-- bib button -->
-          <a id="dai-thesis10" style="cursor:pointer;" role="button" class="btn btn-default btn-sm">
+          <a id="teng2015neuro" style="cursor:pointer;" role="button" class="btn btn-default btn-sm">
             <span class="glyphicon glyphicon-file"></span> bib </a>
           <script type="text/javascript">
-            $(document).ready(function(){$("#dai-thesis10").click(function(){
-              $("#dai-thesis10-content").slideToggle(); }); });
+            $(document).ready(function(){$("#teng2015neuro").click(function(){
+              $("#teng2015neuro-content").slideToggle(); }); });
           </script>
-          <div id="dai-thesis10-content" class="bib">
+          <div id="teng2015neuro-content" class="bib">
             <p>
-            @article{teng2015neuro,</br>
-            title={A Neuro-Muscle circuit model of C.elegans locomotion},</br>
-            author={Haotian, Teng},</br>
+            @article{teng2015neuro,
+            title={A Neuro-Muscle circuit model of C.elegans locomotion},
+            author={Haotian, Teng},
             year={2015} }
             </p>
           </div>	
